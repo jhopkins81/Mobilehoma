@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "Mobilehoma",
-	"version": "1.0",
+	"version": "1.1",
 	"description": "Ou Sucks!",
 	"icons": { "16": "images/ou16.png"},
 	"content_scripts": 

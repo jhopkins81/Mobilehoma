@@ -48,6 +48,7 @@ function handleText(textNode)
 	{
 		v = v.replace(/\bsooner\b/g, "land thief");
 	}
-
+	
+	v = v.replace(/\bOU\b/g, "OWho");
 	textNode.nodeValue = v;
 }
