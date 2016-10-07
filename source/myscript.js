@@ -35,7 +35,19 @@ function handleText(textNode)
 
 	v = v.replace(/\bOklahoma\b/g, "Mobilehoma");
 	v = v.replace(/\boklahoma\b/g, "mobilehoma");	
-	v = v.replace(/\bSooners\b/g, "Land Thieves");
-	v = v.replace(/\bsooners\b/g, "land thieves");
+	if(v.includes("Sooners"))
+	{
+		v = v.replace(/\bSooners\b/g, "Land Thieves");
+	} else if (v.includes("sooners"))
+	{
+		v = v.replace(/\bsooners\b/g, "land thieves");
+	} else if (v.includes("Sooner"))
+	{
+		v = v.replace(/\bSooner\b/g, "Land Thief");
+	} else if (v.includes("sooner"))
+	{
+		v = v.replace(/\bsooner\b/g, "land thief");
+	}
+
 	textNode.nodeValue = v;
 }
