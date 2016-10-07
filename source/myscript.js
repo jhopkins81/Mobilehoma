@@ -50,5 +50,7 @@ function handleText(textNode)
 	}
 	
 	v = v.replace(/\bOU\b/g, "OWho");
+	v = v.replace(/\bBob Stoops\b/g, "Big Game Bob");
+	v = v.replace(/\bStoops\b/g, "Big Game Bob");
 	textNode.nodeValue = v;
 }
